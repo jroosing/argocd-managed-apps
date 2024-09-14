@@ -1,0 +1,5 @@
+reflector:
+  namespace: "default"
+  kinds:
+    - ConfigMap
+    - Secret
