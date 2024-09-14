@@ -14,9 +14,9 @@ metadata:
 spec:
   project: "default"
   source:
-    repoURL: 'jetstack https://charts.jetstack.io'
+    repoURL: 'https://charts.jetstack.io'
     chart: cert-manager
-    targetRevision: 4.11.2
+    targetRevision: 1.15.2
     helm:
       valueFiles:
         - values.yaml
