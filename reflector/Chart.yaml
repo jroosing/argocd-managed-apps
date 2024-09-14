@@ -1,0 +1,9 @@
+apiVersion: v2
+name: reflector-subchart
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+dependencies:
+- name: reflector
+  version: 7.1.286
+  repository: https://emberstack.github.io/helm-charts
