@@ -47,7 +47,7 @@ service:
 
 ingress:
   enabled: true
-  className: ""
+  className: "nginx"
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod" # remove if self managing certs
     nginx.ingress.kubernetes.io/rewrite-target: /
