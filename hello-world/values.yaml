@@ -74,13 +74,13 @@ resources:
     cpu: 100m
     memory: 128Mi
 
-livenessProbe: {}
+# livenessProbe: {}
   # httpGet:
   #   path: /healthz
   #   port: 8080
   # initialDelaySeconds: 3
   # periodSeconds: 10
-readinessProbe: {}
+# readinessProbe: {}
   # httpGet:
   #   path: /readiness
   #   port: 8080
