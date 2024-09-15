@@ -73,18 +73,18 @@ resources:
     cpu: 100m
     memory: 128Mi
 
-# livenessProbe: {}
-  # httpGet:
-  #   path: /healthz
-  #   port: 8080
-  # initialDelaySeconds: 3
-  # periodSeconds: 10
-# readinessProbe: {}
-  # httpGet:
-  #   path: /readiness
-  #   port: 8080
-  # initialDelaySeconds: 3
-  # periodSeconds: 10
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: 8080
+  initialDelaySeconds: 3
+  periodSeconds: 10
+readinessProbe:
+  httpGet:
+    path: /readiness
+    port: 8080
+  initialDelaySeconds: 3
+  periodSeconds: 10
 
 autoscaling:
   enabled: false
